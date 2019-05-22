@@ -1,0 +1,83 @@
+.reg{
+    color: $color1;
+    p{
+        font-size: 48px;
+    }
+    span{
+        font-size: 20px;
+    }
+}
+
+.regbor{
+    border-top: 2px solid #ff5e45;
+    width: 620px;
+    margin: 35px auto 35px auto;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16); 
+}
+.regbor>p:nth-child(1){
+    font-size: 18px;
+    padding: 10px 0 0 0;
+}
+.regform{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+    margin: 16px;  
+    p{
+        font-size: 18px;
+        width: 285px;   
+        text-align: left;
+        line-height: 1.5;
+        margin: 0 20px 0 15px;
+    } 
+    
+}
+
+@media(max-width:768px){
+    .regbor{    
+        width: 85%;  
+    }    
+    .regform{        
+            flex-wrap: wrap;
+            justify-content: center;  
+            p{
+                width: 90%;
+            }
+        }
+    }
+.regisiter{
+    width: 100%;
+    margin: 0 20px 0 0;
+    input{
+        width: 100%;
+        margin-bottom: 6px;    
+        height:32px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        padding: 0 14px;    
+    }
+    span{
+        font-size: $fontsize2;    
+        float: left;
+        line-height: 1.5;
+    }
+
+    
+}
+.regform a{
+    font-size: 14px;    
+    float: left;
+    line-height: 1.5;
+    text-decoration: none;
+    color: $color1;
+}
+.submitbuttom{
+	max-width: 125px;
+	height: 32px;
+	float: right;
+	margin-top: 49px;
+	margin-bottom: 0;
+	color: #ffffff;
+	background-color: #f56c23;
+	padding: 0;
+}

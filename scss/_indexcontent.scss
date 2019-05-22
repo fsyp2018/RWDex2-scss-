@@ -1,0 +1,221 @@
+.content{
+    text-align: center;
+}
+.question{
+	margin: 50px auto 31px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    h2{    
+        font-size: 20px;
+        color: $color1;
+        line-height: 32px;
+    }
+}
+.question::before{
+    flex-grow: 1;
+    max-width: 100px;
+    content: "";
+    border-top: 1px solid $color1;
+}
+.question::after{
+    flex-grow: 1;
+    max-width: 100px;
+    content: "";
+    border-top: 1px solid $color1;
+}
+.food{
+    ul{
+        margin:0 62px 50px 62px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around; 
+        color: $color1;
+    }
+    li{
+        width: 260px;
+    }
+    img{
+        border-radius: 180px;
+        max-width: 100%;
+    }
+    h3{
+        margin:20px auto 11px auto;
+        font-size: 18px;
+        
+    }
+    p{    
+        font-size: $fontsize2;    
+        text-align: left;
+    }
+}
+@media (max-width: 768px){
+    .food li{
+        max-width: 200px;
+        margin-top:30px;  
+     }
+}
+.chef{
+    background: $color1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    .chefphoto{
+        margin-left: 42px;  
+        background-image: url(../img/main_chef_brown.png);    
+        width: 470px;      
+        height: 460px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .chefq{
+        max-width: 410px;
+        text-align: left;
+        color: #EFE9E7;
+        margin:81px auto 80px auto;
+        h3{
+            font-size: 20px;
+            line-height: 32px;
+            margin-bottom: 16px;   
+        }
+        p{
+            font-size: $fontsize2;       
+        }
+    }
+    
+}
+@media (max-width:768px){
+
+    .chefphoto{
+        max-width: 373px;      
+        max-height: 460px;                          
+    }
+    .chefq{
+        max-width: 330px;
+        text-align: left;
+        color: #EFE9E7;
+        margin:81px auto 80px auto;
+    }
+}
+.openassess{
+    color: $color1;
+    background: rgba(250, 250, 250, 0.377);
+    .assesstitle{
+        text-align: center;
+        font-size: $fontsize1;
+        margin:0px auto 32px auto;
+        padding-top: 50px;
+    }
+    .assess{
+        ul{
+        display: flex;    
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+    li{
+        max-width: 32%;
+        display: flex;    
+        flex-wrap:wrap;
+        align-items: flex-start;
+    }
+    img{    
+        border-radius: 67px;   
+        margin-right: 13px;
+    }
+    div{
+        text-align: left;  
+    }
+    h2{    
+        line-height: 67px;
+    }
+    p{    
+        line-height: 24px;
+    }
+    span{    
+        line-height: 36px;
+        display: flex;    
+        justify-content: flex-end; 
+    }
+    }
+}
+@media (max-width:768px){
+    .assess li{
+        max-width: 320px;
+        flex-wrap:nowrap;
+    }
+}
+.openmap{
+    color: $color1;
+    margin-bottom: 50px;
+    .maptitle{
+        font-size: $fontsize1;
+        margin:50px auto 38px auto;
+        line-height: 1.5;
+    }
+    .mapbooking{	
+        display: flex;	
+        justify-content: space-between;    	
+        overflow: hidden;    
+    }
+    .map{    
+        background-image: url(../img/Map.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 386px;
+        width: 100%; 
+        margin-left: 42px;     
+  }
+  .booking{ 
+    margin-left: 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
+    margin-right: 42px;
+    form{
+        width: 100%;;    
+    }
+    input{
+        width: 100%;
+        margin-bottom: 6px;    
+        height:32px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        padding: 0 14px;
+    }
+    .radio{
+        max-width: 14px;
+        max-height: 14px;    	
+    }
+    .button{    	
+        margin-left: 11px;    
+        max-width: 70px;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.35);
+        text-align: center;
+        
+    }
+    .button:hover{
+        background-color: #f56c32;
+    }
+}
+    .buttonstyle{
+            display:flex;
+    justify-content:flex-end;
+    margin-top: 60px;
+    width: 100%;
+}
+}
+@media (max-width:768px){
+    .mapbooking{	
+        display: flex;
+        flex-wrap: wrap;	
+        justify-content: center;     
+    }
+    .map{
+        margin: 10px auto 10px auto;
+    }
+}
